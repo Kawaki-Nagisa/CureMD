@@ -74,11 +74,12 @@ END.
 PROGRAM Factorial:
 
 READ Number;
-Result = 2;
+Result = 1;
 WHILE(Number >= 3):
 DO Total *= Number;
 Number -= 1;
 ENDWHILE;
+PRINT "Factorial of " + Number + " is = " + Result;
 
 END.
 
