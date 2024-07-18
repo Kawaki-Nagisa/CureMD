@@ -1,0 +1,30 @@
+[
+    {
+      "title": "The Odyssey",
+      "img": "odyssey.jpg",
+      "author": "Homer",
+      "price": 24.99,
+      "description": "An ancient Greek epic poem that tells the story of Odysseus' journey home after the Trojan War."
+    },
+    {
+      "title": "Verity",
+      "img": "verity.jpg",
+      "author": "Colleen Hoover",
+      "price": 22.99,
+      "description": "A psychological thriller about a writer who becomes obsessed with a bestselling author's life and work."
+    },
+    {
+      "title": "Pride and Prejudice",
+      "img": "pride.jpg",
+      "author": "Jane Austen",
+      "price": 18.99,
+      "description": "A romantic novel about the complex relationships between the Bennett sisters and their various love interests in 19th-century England."
+    },
+    {
+      "title": "The Shining",
+      "img": "shining.jpg",
+      "author": "Stephen King",
+      "price": 20.99,
+      "description": "A horror novel about a family who becomes trapped in a haunted hotel during the off-season."
+    }
+  ]

@@ -40,7 +40,7 @@ nav a, button{
     color: #4a89aa;
     text-decoration: none;
     font-weight: bold;
-    padding: 20px;
+    padding: 10px 20px;
     border-radius: 20px;
 }
 
@@ -372,6 +372,7 @@ h4{
     height: 0.8lvw;
     padding: 5px;
     padding-bottom: 0;
+    color: rgb(100, 194, 128);
 }
 span{
     color:#FFE0C9;
