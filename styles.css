@@ -5,7 +5,7 @@ html {
 body {
     overflow-x: hidden;
     margin: 30px 0 0 0;
-    background: linear-gradient(to bottom, #efefef49, #1414142f), url("assets/images/Library-background.jpg") right center/cover no-repeat fixed;
+    background: linear-gradient(to bottom, transparent, rgba(29, 29, 29, 0.795)), url("assets/images/Library-background.jpg") right center/cover no-repeat fixed;
 }
 
 header {
@@ -25,21 +25,43 @@ nav {
     margin: 2lvw;
     display: flex;
     justify-content: space-around;
+    align-items: center;
     border-radius: 15px;
+    background-color: #efefefad;
 }
 
-nav a {
+nav div{
+    display: flex;
+    align-items: center;
+}
+nav a, button{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 1.5lvw;
+    font-size: 1.2lvw;
     color: #4a89aa;
     text-decoration: none;
     font-weight: bold;
-    background-color: #efefef86;
     padding: 20px;
-    border-radius: 12px;
+    border-radius: 20px;
 }
 
-nav a:hover {
+nav button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    text-align: center;
+    width: 8lvw;
+    border: none;
+    background: transparent;
+    transition: all 0.5s ease-in-out; 
+}
+
+nav button svg{
+    height: 2lvh;
+    width: 2lvh;
+}
+
+nav a:hover, button:hover {
     color: #efefef;
     background-color: #3d84aa;
     border-radius: 12px;
@@ -66,14 +88,14 @@ div {
 }
 
 .vertical-line {
-    height: 40px;
+    height: 10lvh;
     border-left: 4px solid #FFE0C9;
     margin: 0 10px;
     padding: 0;
 }
 
 h1, h2 {
-    color: #4d1f02;
+    color: #df922e;
 }
 
 h3 {
@@ -201,14 +223,15 @@ fieldset {
 }
 
 label {
-    color: #4d1f02;
+    text-align: center;
+    color: #fdb78fda;
     font-size: 1.1rem;
     display: block;
     margin-bottom: 5px;
     font-weight: bold;
 }
 
-input[type="text"], input[type="email"], textarea {
+input[type="text"], input[type="email"],input[type="search"], textarea {
     width: calc(100% - 10px);
     padding: 8px;
     border: 1px solid #ccc;
@@ -218,6 +241,30 @@ input[type="text"], input[type="email"], textarea {
     font-size: 1rem;
     color: #3d84aa;
     text-align: center;
+}
+
+input[type="text"], input[type="email"], textarea
+{
+    outline-color: #db7b3b;
+}
+
+input[type="search"]
+{
+    height: 5lvh;
+    width: 30lvw;
+    background-color: #efefefcc;
+    border-radius: 20pc;
+    margin-right: 50px;
+    
+}
+
+input[type="search"]:focus
+{
+    outline-color: #3d84aa;
+}
+
+input[type="radio"]:checked{
+    accent-color: #66381C;
 }
 
 textarea {
@@ -268,4 +315,64 @@ footer h3{
     color: #efefefd2;
 }
 
+.content{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
 
+.card{
+background: linear-gradient(to left, #62aaccaf, transparent);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(11.4px);
+-webkit-backdrop-filter: blur(11.4px);
+border: 1px solid rgba(85, 206, 229, 0.3);
+display: flex;
+width: 24lvw;
+height: 10lvh;
+}
+
+.review-user{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    width: 30%;
+}
+
+.review-user img{
+    align-self: center;
+    width: 6lvh;
+    height: 6lvh;
+    border-radius: 50%;
+}
+
+h4{ 
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: small;
+    margin: 10px 0 0 0;
+}
+
+.review-stars{
+    display: flex;
+    padding-left: 0;
+}
+
+.review p{
+    font-size: 0.8rem;
+    text-align: start;
+    margin-top: 0;
+    overflow: hidden;
+}
+
+.star{
+    width: 0.8lvw;
+    height: 0.8lvw;
+    padding: 5px;
+    padding-bottom: 0;
+}
+span{
+    color:#FFE0C9;
+}
